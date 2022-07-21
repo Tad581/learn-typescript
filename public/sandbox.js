@@ -1,12 +1,22 @@
 "use strict";
-var add = function (a, b, c /*?*/) {
-    if (c === void 0) { c /*?*/ = 10; }
-    console.log(a + b);
-    console.log(c);
+// let greet: Function;
+// example 1
+var greet;
+greet = function (name, greeting) {
+    console.log("".concat(name, " says ").concat(greeting));
 };
-add(5, 10, 'ninja');
-var minus = function (a, b) {
-    return a + b;
+// example 2
+var calc;
+calc = function (numOne, numTwo, action) {
+    if (action === 'add') {
+        return numOne + numTwo;
+    }
+    else {
+        return numOne - numTwo;
+    }
 };
-var result = minus(10, 7);
-console.log(result);
+// example 3
+var logDetails;
+logDetails = function (ninja) {
+    console.log("".concat(ninja.name, " is ").concat(ninja.age, " years old"));
+};
