@@ -1,14 +1,5 @@
-// let greet: Function = () => {
-//   console.log('hello, world');
-// }
-
-// greet = 'hello';
-
-// greet = () => {
-//   console.log('hello, again');
-// }
-
-const add = (a: number, b: number, c/*?*/: number | string = 10): void => {
+type numberOrString = string | number
+const add = (a: number, b: number, c/*?*/: numberOrString = 10): void => {
   console.log(a + b);
   console.log(c);
 }
